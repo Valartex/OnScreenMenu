@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.980,D:\Projects\Menu\Sources\SectorSetUnit.dfm=D:\Projects\Menu\Sources\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.157,=D:\Projects\Menu\Sources\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.338,D:\Projects\Menu\Sources\Menu.dproj=D:\Projects\Menu\Sources\MenuConfig.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.310,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit4.dfm=D:\Projects\Menu\Sources\MainUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.039,=C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.310,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Unit4.pas=D:\Projects\Menu\Sources\MainUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.327,C:\Documents and Settings\Admin\Мои документы\RAD Studio\Projects\Project3.dproj=D:\Projects\Menu\Sources\Menu.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.980,D:\Projects\Menu\Sources\SectorSetUnit.pas=D:\Projects\Menu\Sources\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
