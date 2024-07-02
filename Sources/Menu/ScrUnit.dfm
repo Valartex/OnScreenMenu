@@ -1,0 +1,21 @@
+object ScrForm: TScrForm
+  Left = 280
+  Top = 120
+  BorderStyle = bsNone
+  Caption = 'ScrForm'
+  ClientHeight = 613
+  ClientWidth = 862
+  Color = clBlack
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  OnKeyDown = FormKeyDown
+  PixelsPerInch = 96
+  TextHeight = 13
+end
