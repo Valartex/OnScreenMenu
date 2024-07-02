@@ -19,7 +19,7 @@ type
     SetSectorMenu: TMenuItem;
     XPManifest1: TXPManifest;
     ToolBar1: TToolBar;
-    SaveAllTB: TToolButton;
+    btnSaveAll: TToolButton;
     ImageList1: TImageList;
     ImageList2: TImageList;
     procedure FormCreate(Sender: TObject);
@@ -34,7 +34,7 @@ type
     procedure SetSectorMenuClick(Sender: TObject);
     procedure PanelMouseMove(Sender: TObject; Shift: TShiftState; X,
       Y: Integer);
-    procedure SaveAllTBClick(Sender: TObject);
+    procedure btnSaveAllClick(Sender: TObject);
   private
     SB: TScrollBox;
     TS: TTabSheet;
@@ -147,7 +147,7 @@ begin
     (Sender as TPanel).Cursor := crDefault
 end;
 
-procedure TMainForm.SaveAllTBClick(Sender: TObject); //сохранить всё
+procedure TMainForm.btnSaveAllClick(Sender: TObject); //сохранить всё
 var
   i, j: Integer;
   SectorName: String;
