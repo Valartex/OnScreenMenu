@@ -17,7 +17,7 @@ object MainForm: TMainForm
   OnDestroy = FormDestroy
   PixelsPerInch = 96
   TextHeight = 13
-  object PageControl1: TPageControl
+  object pcMain: TPageControl
     Left = 82
     Top = 0
     Width = 780
