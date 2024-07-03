@@ -10,7 +10,7 @@ uses
 
 type
   TMainForm = class(TForm)
-    PageControl1: TPageControl;
+    pcMain: TPageControl;
     PopupMenu1: TPopupMenu;
     CreateSectorMenu: TMenuItem;
     PopupMenu2: TPopupMenu;
@@ -65,7 +65,7 @@ begin
   for i := 0 to Screen.MonitorCount - 1 do //цикл по кол-ву мониторов в системе
     begin
       TS := TTabSheet.Create(Self); //создаём вкладку
-      TS.PageControl := PageControl1;
+      TS.PageControl := pcMain;
       TS.Caption :=  'Экран ' + IntToStr(Screen.Monitors[i].MonitorNum) + ': ' + IntToStr(Screen.Monitors[i].Width) + ' x ' + IntToStr(Screen.Monitors[i].Height);
 
       SB := TScrollBox.Create(Self); //создаём на вкладке ScrollBox
@@ -152,14 +152,14 @@ var
   i, j: Integer;
   SectorName: String;
 begin
-  for i := 0 to PageControl1.PageCount - 1 do
+  for i := 0 to pcMain.PageCount - 1 do
     begin
-      Settings.WriteBool('Monitor' + IntToStr(i), 'Used', ((PageControl1.Pages[i].Controls[1] as TToolBar).Controls[0] as TToolButton).Down);
-      Settings.WriteInteger('Monitor' + IntToStr(i), 'SectorsCount', ((PageControl1.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).ControlCount); //сохраняем количество секторов на текущей вкладке
-      for j := 0 to ((PageControl1.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).ControlCount - 1 do //цикл по количеству компонентов
+      Settings.WriteBool('Monitor' + IntToStr(i), 'Used', ((pcMain.Pages[i].Controls[1] as TToolBar).Controls[0] as TToolButton).Down);
+      Settings.WriteInteger('Monitor' + IntToStr(i), 'SectorsCount', ((pcMain.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).ControlCount); //сохраняем количество секторов на текущей вкладке
+      for j := 0 to ((pcMain.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).ControlCount - 1 do //цикл по количеству компонентов
         begin
           SectorName := 'Monitor' + IntToStr(i) + 'Sector' + IntToStr(j); //имя раздела информации о секторе
-          with ((PageControl1.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).Controls[j] as TPanel do //конструкция вида PageControl1.Pages[i].ScrollBox.Panel.Panel[j]
+          with ((pcMain.Pages[i].Controls[0] as TScrollBox).Controls[0] as TPanel).Controls[j] as TPanel do //конструкция вида PageControl1.Pages[i].ScrollBox.Panel.Panel[j]
             begin
               Settings.WriteInteger(SectorName, 'Width', Width);
               Settings.WriteInteger(SectorName, 'Height', Height);
