@@ -9,14 +9,14 @@ uses
 
 type
   TSectorSetForm = class(TForm)
-    GroupBox1: TGroupBox;
+    gbSectorSize: TGroupBox;
     SpinEdit1: TSpinEdit;
     SpinEdit2: TSpinEdit;
     SpinEdit3: TSpinEdit;
     SpinEdit4: TSpinEdit;
     Label1: TLabel;
     Label2: TLabel;
-    GroupBox2: TGroupBox;
+    gbInfoType: TGroupBox;
     Label3: TLabel;
     Label4: TLabel;
     RadioButton1: TRadioButton;

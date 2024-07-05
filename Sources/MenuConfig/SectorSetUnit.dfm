@@ -16,7 +16,7 @@ object SectorSetForm: TSectorSetForm
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
-  object GroupBox1: TGroupBox
+  object gbSectorSize: TGroupBox
     Left = 0
     Top = 0
     Width = 529
@@ -97,7 +97,7 @@ object SectorSetForm: TSectorSetForm
       OnChange = SpinEdit4Change
     end
   end
-  object GroupBox2: TGroupBox
+  object gbInfoType: TGroupBox
     Left = 0
     Top = 89
     Width = 529
