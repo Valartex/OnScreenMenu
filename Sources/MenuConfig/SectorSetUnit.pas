@@ -10,10 +10,10 @@ uses
 type
   TSectorSetForm = class(TForm)
     gbSectorSize: TGroupBox;
-    SpinEdit1: TSpinEdit;
-    SpinEdit2: TSpinEdit;
-    SpinEdit3: TSpinEdit;
-    SpinEdit4: TSpinEdit;
+    seWidth: TSpinEdit;
+    seHeight: TSpinEdit;
+    seLeft: TSpinEdit;
+    seTop: TSpinEdit;
     Label1: TLabel;
     Label2: TLabel;
     gbInfoType: TGroupBox;
@@ -34,10 +34,10 @@ type
     OpenDialog3: TOpenDialog;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure SpinEdit1Change(Sender: TObject);
-    procedure SpinEdit2Change(Sender: TObject);
-    procedure SpinEdit3Change(Sender: TObject);
-    procedure SpinEdit4Change(Sender: TObject);
+    procedure seWidthChange(Sender: TObject);
+    procedure seHeightChange(Sender: TObject);
+    procedure seLeftChange(Sender: TObject);
+    procedure seTopChange(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure Button3Click(Sender: TObject);
   private
@@ -96,22 +96,22 @@ begin
   MainForm.SectorResize(MainForm.PopupMenu2.PopupComponent); //для обновления информации в Caption панели
 end;
 
-procedure TSectorSetForm.SpinEdit1Change(Sender: TObject); //ширина
+procedure TSectorSetForm.seWidthChange(Sender: TObject); //ширина
 begin
   (MainForm.PopupMenu2.PopupComponent as TPanel).Width := SpinEdit1.Value
 end;
 
-procedure TSectorSetForm.SpinEdit2Change(Sender: TObject); //высота
+procedure TSectorSetForm.seHeightChange(Sender: TObject); //высота
 begin
   (MainForm.PopupMenu2.PopupComponent as TPanel).Height := SpinEdit2.Value
 end;
 
-procedure TSectorSetForm.SpinEdit3Change(Sender: TObject); //отступ слева
+procedure TSectorSetForm.seLeftChange(Sender: TObject); //отступ слева
 begin
   (MainForm.PopupMenu2.PopupComponent as TPanel).Left := SpinEdit3.Value
 end;
 
-procedure TSectorSetForm.SpinEdit4Change(Sender: TObject); //отступ сверху
+procedure TSectorSetForm.seTopChange(Sender: TObject); //отступ сверху
 begin
   (MainForm.PopupMenu2.PopupComponent as TPanel).Top := SpinEdit4.Value
 end;

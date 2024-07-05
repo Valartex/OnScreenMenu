@@ -52,7 +52,7 @@ object SectorSetForm: TSectorSetForm
       Height = 13
       Caption = #1054#1090#1089#1090#1091#1087' '#1089#1074#1077#1088#1093#1091
     end
-    object SpinEdit1: TSpinEdit
+    object seWidth: TSpinEdit
       Left = 11
       Top = 40
       Width = 121
@@ -61,9 +61,9 @@ object SectorSetForm: TSectorSetForm
       MinValue = 0
       TabOrder = 0
       Value = 0
-      OnChange = SpinEdit1Change
+      OnChange = seWidthChange
     end
-    object SpinEdit2: TSpinEdit
+    object seHeight: TSpinEdit
       Left = 138
       Top = 40
       Width = 121
@@ -72,9 +72,9 @@ object SectorSetForm: TSectorSetForm
       MinValue = 0
       TabOrder = 1
       Value = 0
-      OnChange = SpinEdit2Change
+      OnChange = seHeightChange
     end
-    object SpinEdit3: TSpinEdit
+    object seLeft: TSpinEdit
       Left = 272
       Top = 40
       Width = 121
@@ -83,9 +83,9 @@ object SectorSetForm: TSectorSetForm
       MinValue = 0
       TabOrder = 2
       Value = 0
-      OnChange = SpinEdit3Change
+      OnChange = seLeftChange
     end
-    object SpinEdit4: TSpinEdit
+    object seTop: TSpinEdit
       Left = 399
       Top = 40
       Width = 121
@@ -94,7 +94,7 @@ object SectorSetForm: TSectorSetForm
       MinValue = 0
       TabOrder = 3
       Value = 0
-      OnChange = SpinEdit4Change
+      OnChange = seTopChange
     end
   end
   object gbInfoType: TGroupBox
