@@ -105,7 +105,7 @@ object SectorSetForm: TSectorSetForm
     Align = alTop
     Caption = #1054#1090#1086#1073#1088#1072#1078#1072#1077#1084#1072#1103' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1103
     TabOrder = 1
-    object RadioButton1: TRadioButton
+    object rbImage: TRadioButton
       Left = 11
       Top = 24
       Width = 86
@@ -121,7 +121,7 @@ object SectorSetForm: TSectorSetForm
       ReadOnly = True
       TabOrder = 1
     end
-    object RadioButton2: TRadioButton
+    object rbVideo: TRadioButton
       Left = 11
       Top = 88
       Width = 54
@@ -155,7 +155,7 @@ object SectorSetForm: TSectorSetForm
       TabOrder = 5
       OnClick = Button2Click
     end
-    object RadioButton3: TRadioButton
+    object rbFlash: TRadioButton
       Left = 11
       Top = 152
       Width = 54
