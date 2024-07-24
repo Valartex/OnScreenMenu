@@ -113,7 +113,7 @@ object SectorSetForm: TSectorSetForm
       Caption = #1048#1079#1086#1073#1088#1072#1078#1077#1085#1080#1077
       TabOrder = 0
     end
-    object Edit1: TEdit
+    object edImagePath: TEdit
       Left = 24
       Top = 47
       Width = 417
@@ -129,7 +129,7 @@ object SectorSetForm: TSectorSetForm
       Caption = #1042#1080#1076#1077#1086
       TabOrder = 2
     end
-    object Edit2: TEdit
+    object edVideoPath: TEdit
       Left = 24
       Top = 111
       Width = 417
@@ -163,7 +163,7 @@ object SectorSetForm: TSectorSetForm
       Caption = #1060#1083#1101#1096
       TabOrder = 6
     end
-    object Edit3: TEdit
+    object edFlashPath: TEdit
       Left = 24
       Top = 175
       Width = 417
