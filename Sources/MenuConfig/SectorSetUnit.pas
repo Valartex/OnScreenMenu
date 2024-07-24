@@ -76,13 +76,13 @@ end;
 procedure TSectorSetForm.FormClose(Sender: TObject; //при закрытии сохраняем информацию об отображаемой информации
   var Action: TCloseAction);
 begin
-  if RadioButton1.Checked then
+  if rbImage.Checked then
   begin
     (MainForm.PopupMenu2.PopupComponent as TPanel).Tag := 0;
     (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := Edit1.Text
   end
   else
-  if RadioButton2.Checked then
+  if rbVideo.Checked then
   begin
     (MainForm.PopupMenu2.PopupComponent as TPanel).Tag := 1;
     (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := Edit2.Text
@@ -98,22 +98,22 @@ end;
 
 procedure TSectorSetForm.seWidthChange(Sender: TObject); //ширина
 begin
-  (MainForm.PopupMenu2.PopupComponent as TPanel).Width := SpinEdit1.Value
+  (MainForm.PopupMenu2.PopupComponent as TPanel).Width := seWidth.Value
 end;
 
 procedure TSectorSetForm.seHeightChange(Sender: TObject); //высота
 begin
-  (MainForm.PopupMenu2.PopupComponent as TPanel).Height := SpinEdit2.Value
+  (MainForm.PopupMenu2.PopupComponent as TPanel).Height := seHeight.Value
 end;
 
 procedure TSectorSetForm.seLeftChange(Sender: TObject); //отступ слева
 begin
-  (MainForm.PopupMenu2.PopupComponent as TPanel).Left := SpinEdit3.Value
+  (MainForm.PopupMenu2.PopupComponent as TPanel).Left := seLeft.Value
 end;
 
 procedure TSectorSetForm.seTopChange(Sender: TObject); //отступ сверху
 begin
-  (MainForm.PopupMenu2.PopupComponent as TPanel).Top := SpinEdit4.Value
+  (MainForm.PopupMenu2.PopupComponent as TPanel).Top := seTop.Value
 end;
 
 end.

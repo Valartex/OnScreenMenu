@@ -231,21 +231,21 @@ procedure TMainForm.SetSectorMenuClick(Sender: TObject); //окно свойств сектора
 begin
   SectorSetForm := TSectorSetForm.Create(Self);
   //заполняем поля формы текущими значениями
-  SectorSetForm.SpinEdit1.Value := (PopupMenu2.PopupComponent as TPanel).Width;
-  SectorSetForm.SpinEdit2.Value := (PopupMenu2.PopupComponent as TPanel).Height;
-  SectorSetForm.SpinEdit3.Value := (PopupMenu2.PopupComponent as TPanel).Left;
-  SectorSetForm.SpinEdit4.Value := (PopupMenu2.PopupComponent as TPanel).Top;
+  SectorSetForm.seWidth.Value := (PopupMenu2.PopupComponent as TPanel).Width;
+  SectorSetForm.seHeight.Value := (PopupMenu2.PopupComponent as TPanel).Height;
+  SectorSetForm.seLeft.Value := (PopupMenu2.PopupComponent as TPanel).Left;
+  SectorSetForm.seTop.Value := (PopupMenu2.PopupComponent as TPanel).Top;
   case (PopupMenu2.PopupComponent as TPanel).Tag of
   0:  begin
-        SectorSetForm.RadioButton1.Checked := True;
+        SectorSetForm.rbImage.Checked := True;
         SectorSetForm.Edit1.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   1:  begin
-        SectorSetForm.RadioButton2.Checked := True;
+        SectorSetForm.rbVideo.Checked := True;
         SectorSetForm.Edit2.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   2:  begin
-        SectorSetForm.RadioButton3.Checked := True;
+        SectorSetForm.rbFlash.Checked := True;
         SectorSetForm.Edit3.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   end;
