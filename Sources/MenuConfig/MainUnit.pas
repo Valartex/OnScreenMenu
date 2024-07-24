@@ -238,15 +238,15 @@ begin
   case (PopupMenu2.PopupComponent as TPanel).Tag of
   0:  begin
         SectorSetForm.rbImage.Checked := True;
-        SectorSetForm.Edit1.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
+        SectorSetForm.edImagePath.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   1:  begin
         SectorSetForm.rbVideo.Checked := True;
-        SectorSetForm.Edit2.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
+        SectorSetForm.edVideoPath.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   2:  begin
         SectorSetForm.rbFlash.Checked := True;
-        SectorSetForm.Edit3.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
+        SectorSetForm.edFlashPath.Text := (PopupMenu2.PopupComponent as TPanel).Hint;
       end;
   end;
  //---

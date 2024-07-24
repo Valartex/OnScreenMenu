@@ -58,19 +58,19 @@ uses MainUnit;
 procedure TSectorSetForm.Button1Click(Sender: TObject);
 begin
   if OpenDialog1.Execute then
-    Edit1.Text := OpenDialog1.FileName
+    edImagePath.Text := OpenDialog1.FileName
 end;
 
 procedure TSectorSetForm.Button2Click(Sender: TObject);
 begin
   if OpenDialog2.Execute then
-    Edit2.Text := OpenDialog2.FileName
+    edVideoPath.Text := OpenDialog2.FileName
 end;
 
 procedure TSectorSetForm.Button3Click(Sender: TObject);
 begin
   if OpenDialog3.Execute then
-    Edit3.Text := OpenDialog3.FileName
+    edFlashPath.Text := OpenDialog3.FileName
 end;
 
 procedure TSectorSetForm.FormClose(Sender: TObject; //при закрытии сохраняем информацию об отображаемой информации
@@ -79,18 +79,18 @@ begin
   if rbImage.Checked then
   begin
     (MainForm.PopupMenu2.PopupComponent as TPanel).Tag := 0;
-    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := Edit1.Text
+    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := edImagePath.Text
   end
   else
   if rbVideo.Checked then
   begin
     (MainForm.PopupMenu2.PopupComponent as TPanel).Tag := 1;
-    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := Edit2.Text
+    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := edVideoPath.Text
   end
   else
   begin
     (MainForm.PopupMenu2.PopupComponent as TPanel).Tag := 2;
-    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := Edit3.Text
+    (MainForm.PopupMenu2.PopupComponent as TPanel).Hint := edFlashPath.Text
   end;
 
   MainForm.SectorResize(MainForm.PopupMenu2.PopupComponent); //для обновления информации в Caption панели
